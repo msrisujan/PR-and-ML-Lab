@@ -129,12 +129,12 @@ if __name__ == "__main__":
             b=np.array(b)
             option = int(input("Enter 1 for matrix1 and 2 for matrix2: "))
             if option == 1:
-                if columns1 != len(b):
+                if rows1 != len(b):
                     print("Invalid operation")
                 else:
                     print(solve_system_of_linear_equations(matrix1, b))
             elif option == 2:
-                if columns2 != len(b):
+                if rows2 != len(b):
                     print("Invalid operation")
                 else:
                     print(solve_system_of_linear_equations(matrix2, b))
